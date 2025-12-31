@@ -13,3 +13,12 @@ namespace eCommerce.Core.DTO
         GenderOptions Gender
         );
 }
+
+
+/*
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
