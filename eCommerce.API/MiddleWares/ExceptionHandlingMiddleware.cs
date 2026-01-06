@@ -48,12 +48,3 @@ namespace eCommerce.API.MiddleWares
 }
 
 
-/*
- * 
- * 
- * 
- * 
- *
- * 
- * 
- */
