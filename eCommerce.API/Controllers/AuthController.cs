@@ -13,7 +13,7 @@ namespace eCommerce.API.Controllers
 
         public AuthController(IUserService userService)
         {
-            _userService = userService;
+            _userService = userService ;
         }
 
         [HttpPost("login")]
