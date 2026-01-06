@@ -8,6 +8,6 @@ namespace eCommerce.Core.DTO
 {
     public enum GenderOptions
     {
-        MALE, FEMALE, Others
+         A, FEMALE, MALE, Others
     }
 }

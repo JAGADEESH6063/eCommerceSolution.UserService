@@ -1,5 +1,8 @@
-﻿using eCommerce.Core.ServiceContracts;
+﻿using eCommerce.Core.DTO;
+using eCommerce.Core.ServiceContracts;
 using eCommerce.InfraStructure.Services;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace eCommerce.Core;
@@ -12,7 +15,10 @@ public static class DependencyInjection
     /// <returns></returns>
     public static IServiceCollection AddCore(this IServiceCollection services)
     {
-        services.AddSingleton<IUserService, UserService>();
+        services.AddTransient<IUserService, UserService>();
+
+        //add fluent validation dependency here
+        services.AddValidatorsFromAssemblyContaining<LoginRequest>();
         //Add services here like cahcing etc
         return services;
     }
